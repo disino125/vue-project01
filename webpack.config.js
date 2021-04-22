@@ -22,7 +22,7 @@ module.exports = {
         {test:/\.less$/,use:['style-loader','css-loader','less-loader']},
         {test:/\.scss$/,use:['style-loader','css-loader','sass-loader']},
         {test:/\.jpg|png|gif|bmp$/,use:'url-loader?limit=623680&name=[hash:7][name].[ext]'},
-        {test:/\.tff|woff|woff2|eot|svg$/,use:'url-loader'},
+        {test:/\.ttf|woff|woff2|eot|svg$/,use:'url-loader'},
         {test:/\.js$/,exclude:/node_modules/,use: {
           loader: 'babel-loader',
           options: {
